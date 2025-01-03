@@ -83,6 +83,15 @@ const work = [
 
   },
   {
+    name: "Indu Sah Foundation",
+    position: "Founding Software Engineer",
+    role: "🌏Developing the website for the Nepalese-American humanitarian non-profit, Indu Sah Foundation.",
+    imageUrl: "/Web_Photo_Editor.jpg",
+    color: "#F8D7DA",
+    date: "Present"
+
+  },
+  {
     name: "Iowa Legislature",
     position: "Data Science Intern for Iowa Senator",
     role: "📊Built historic voter data automation software",
@@ -122,19 +131,19 @@ export default function Home() {
 
       <nav className=" fixed top-0 left-0 right-0 z-10 flex justify-center items-center py-3 rounded-full space-x-10">
         <a href="#home" className="relative group">
-          <div className="bg-gray-300 hover:bg-gray-200 h-28 w-28 text-center flex items-center justify-center text-gray-700 font-medium cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg">
+          <div className="bg-gray-300 hover:bg-gray-200 h-28 w-28 text-center flex items-center justify-center text-gray-700 font-medium cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg opacity-50 group-hover:opacity-100">
             <FontAwesomeIcon icon={faHome} size="4x" />
           </div>
           <span className="absolute top-28 left-1/2 transform -translate-x-1/2 text-white bg-gray-700 px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition duration-300">Home</span>
         </a>
         <a href="#work" className="relative group">
-          <div className="bg-gray-300 hover:bg-gray-200 h-28 w-28 text-center flex items-center justify-center text-gray-700 font-medium cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg">
+          <div className="bg-gray-300 hover:bg-gray-200 h-28 w-28 text-center flex items-center justify-center text-gray-700 font-medium cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg opacity-50 group-hover:opacity-100">
             <FontAwesomeIcon icon={faBriefcase} size="4x" />
           </div>
           <span className="absolute top-28 left-1/2 transform -translate-x-1/2 text-white bg-gray-700 px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition duration-300">Experiences</span>
         </a>
         <a href="#education" className="relative group">
-          <div className="bg-gray-300 hover:bg-gray-200 h-28 w-28 text-center flex items-center justify-center text-gray-700 font-medium cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg">
+          <div className="bg-gray-300 hover:bg-gray-200 h-28 w-28 text-center flex items-center justify-center text-gray-700 font-medium cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg opacity-50 group-hover:opacity-100">
             <FontAwesomeIcon icon={faSchool} size="4x" />
           </div>
           <span className="absolute top-28 left-1/2 transform -translate-x-1/2 text-white bg-gray-700 px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition duration-300">Education</span>
