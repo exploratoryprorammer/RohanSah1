@@ -69,7 +69,7 @@ const work = [
     name: "John Deere",
     position: "Incoming Student Software Engineer",
     role: "🚜 Full Stack Software Development @ John Deere Financial",
-    imageUrl: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c486c7da-2f85-43e2-8b07-bc830d64e42f/d996o9y-8adffe34-6f68-447b-98ec-187e2da2e480.jpg/v1/fill/w_1600,h_1000,q_75,strp/john_deere_logo_wallpaper_by_fictionalautumn_d996o9y-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAwMCIsInBhdGgiOiJcL2ZcL2M0ODZjN2RhLTJmODUtNDNlMi04YjA3LWJjODMwZDY0ZTQyZlwvZDk5Nm85eS04YWRmZmUzNC02ZjY4LTQ0N2ItOThlYy0xODdlMmRhMmU0ODAuanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.G7kbH5_--qlAraOD5hXVU1yPqvGOLD-G0T2NEzu0Wbk",
+    imageUrl: "/john_deere_logo_wallpaper_by_fictionalautumn_d996o9y-fullview.jpg",
     color: "#C8E6C9",
     date: "Present"
   },
