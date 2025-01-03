@@ -17,10 +17,10 @@ import { ReactTyped } from "react-typed";
 const s = "#c22028"
 const data = {
   Age: "19",
-  Interests: ["Full Stack Development", "Data Science", "Cloud Computing", "Machine Learning", "Music Composition & Performance",],
+  Interests: ["Full Stack Development", "Data Science", "Cloud Computing", "Machine Learning", "Music Composition",],
   Languages: ["Java", "Typescript", "Python", "C++", "SQL"],
   Libraries: ["React", "Tailwind CSS", "Next.js"],
-  Hobby: ["Soccer"],
+  Hobby: ["Tennis, Soccer"],
 
 }
 
@@ -69,7 +69,7 @@ const work = [
     name: "John Deere",
     position: "Incoming Student Software Engineer",
     role: "🚜Full Stack Software Development @ John Deere Financial",
-    imageUrl: "/IMG_0007.JPG",
+    imageUrl: "/2023-11-19_d9e390b17bd8a8.jpg.webp",
     color: "#C8E6C9",
     date: "Present"
   },
@@ -85,7 +85,7 @@ const work = [
   {
     name: "Indu Sah Foundation",
     position: "Founding Software Engineer",
-    role: "🌏Developing the website for the Nepalese-American humanitarian non-profit, Indu Sah Foundation.",
+    role: "🌏Developing the website for the Nepalese-American humanitarian non-profit, Indu Sah Foundation",
     imageUrl: "/Web_Photo_Editor.jpg",
     color: "#F8D7DA",
     date: "Present"
@@ -127,7 +127,7 @@ export default function Home() {
   return (
     <div className="overflow-auto scroll-smooth" style={styling} >
       <section id="home">
-      <div className="h-5"/>
+      <div className="h-10"/>
 
       <nav className=" fixed top-0 left-0 right-0 z-10 flex justify-center items-center py-3 rounded-full space-x-10">
         <a href="#home" className="relative group">
