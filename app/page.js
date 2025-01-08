@@ -9,6 +9,8 @@ import Image from "next/image";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { useState, useEffect, useRef } from "react";
 import { ReactTyped } from "react-typed";
+import { useMediaQuery } from "@mui/material";
+
 
 
 
@@ -17,12 +19,12 @@ import { ReactTyped } from "react-typed";
 const s = "#c22028"
 const data = {
   Age: "19",
-  Interests: ["Full Stack Development", "Data Science", "Cloud Computing", "Machine Learning", "Computer Networks"],
-  Languages: ["Java", "Python", "JavaScript", "C++", "SQL"],
-  Libraries: ["Spring", "React", "Node", "Next.js", "Django"],
+  Current_Role: ["Student SWE @ John Deere", "2nd Year CS + Math @ ISU"] ,
+  Languages: ["Java", "Python", "JavaScript", "C++", "SQL"], 
+  Libraries: ["Spring", "React", "Node.js", "Django"], 
   Hobbies: ["Tennis", "Running", "Soccer"],
+};
 
-}
 
 const styling = {
   backgroundImage: `url("https://gifdb.com/images/high/starfield-dark-background-sgli8iwvguwxzovr.gif")`,
@@ -121,15 +123,14 @@ const work = [
 
 
 export default function Home() {
-
-
+  const smallscreen = useMediaQuery('(max-width:768px)')
 
   return (
     <div className="overflow-auto scroll-smooth" style={styling} >
-      <section id="home">
-        <div className="h-5" />
+      <section id="home" >
+        <div className="h-5 -mt-10" />
 
-        {(<nav className=" fixed top-0 left-0 right-0 z-10 flex justify-center items-center py-3 rounded-full space-x-10">
+        {!smallscreen ? (<nav className=" fixed top-0 left-0 right-0 z-10 flex justify-center items-center py-3 rounded-full space-x-10">
           <a href="#home" className="relative group">
             <div className="bg-gray-300 hover:bg-gray-200 h-28 w-28 text-center flex items-center justify-center text-gray-700 font-medium cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg opacity-50 group-hover:opacity-100">
               <FontAwesomeIcon icon={faHome} size="4x" />
@@ -148,46 +149,63 @@ export default function Home() {
             </div>
             <span className="absolute top-28 left-1/2 transform -translate-x-1/2 text-white bg-gray-700 px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition duration-300">Education</span>
           </a>
-        </nav>)}
-        <div className="flex items-center justify-center h-screen mt-20">
-          <div className="text-center mr-32">
-            <div className="text-6xl font-mono text-black">A Software Engineerd </div>
-            {/* <div className="w-1/3 h-1/3 items-center justify-center">         
-            <img src="/78170C86-93AC-4037-9408-CDF1FF058404_1_105_c.jpeg" className=" h-full w-full object-cover bg-gray-300  rounded-xl"/>
-          </div> */}
+        </nav>) : <></>}
+        <div className="flex items-center justify-center h-screen mt-20 flex-wrap">
+  <div className="text-center mr-8 md:mr-16 sm:mr-16">
+    <div className="text-4xl md:text-6xl sm:text-6xl font-mono text-black opacity-0">A Software Engineers</div>
 
-            <div className="text-6xl font-mono "><ReactTyped strings={["Hi! I'm Rohan 👋", "a CS Student", "A Software Engineer"]} typeSpeed={100} backSpeed={100} loop></ReactTyped></div>
-            <div className="space-x-4 mt-2 ">
-              <a href="https://github.com/exploratoryprorammer"><FontAwesomeIcon size="4x" className="" icon={faGithub} /></a>
-              <a href="https://www.linkedin.com/in/rohan-sah/"><FontAwesomeIcon size="4x" className="text-blue-600" icon={faLinkedin} /></a>
-              <a href="mailto:your.email@example.com"><FontAwesomeIcon size="4x" icon={faEnvelope} /></a>
-            </div>
-          </div>
-          
-          <div className="w-1/3 text-2xl bg-white rounded-lg mr-12 mt-20 overflow-auto">
-            <div className="flex items-center justify-between bg-gray-200 rounded-t-lg p-1">
-              <div className="flex ml-2 space-x-3">
-                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-              </div>
-              <div className="text-gray-700 font-semibold">Rohan.json</div>
-              <div></div>
-            </div>
+    <div className="text-3xl md:text-6xl sm:text-6xl  font-mono mt-4">
+      <ReactTyped
+        strings={[
+          "Hi! I'm Rohan 👋",
+          "a CS Student",
+          "A Software Engineer",
+        ]}
+        typeSpeed={100}
+        backSpeed={100}
+        loop
+      ></ReactTyped>
+    </div>
 
-            <div className="overflow-x-auto">
-              <JsonView src={data} displaySize={10} displayArrayIndex={false} />
-            </div>
-          </div>
+    <div className="space-x-4 mt-4">
+      <a href="https://github.com/exploratoryprorammer">
+        <FontAwesomeIcon size="3x" className="" icon={faGithub} />
+      </a>
+      <a href="https://www.linkedin.com/in/rohan-sah/">
+        <FontAwesomeIcon size="3x" className="text-blue-600" icon={faLinkedin} />
+      </a>
+      <a href="mailto:your.email@example.com">
+        <FontAwesomeIcon size="3x" icon={faEnvelope} />
+      </a>
+    </div>
+  </div>
+
+  <div className="w-full sm:w-[30rem] md:w-[32rem] lg:w-[40rem] max-w-full bg-white rounded-lg mt-5 md:mt-20 overflow-auto">
+    <div className="flex items-center justify-between bg-gray-200 rounded-t-lg p-2">
+      <div className="flex ml-2 space-x-3">
+        <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+        <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+        <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+      </div>
+      <div className="text-gray-700 text-2xl font-semibold pl-4
+       text-center">Rohan.json</div>
+    </div>
+
+    <div className="overflow-x-auto p-4 text-2xl">
+      <JsonView
+        src={data}
+        displaySize={10}
+        displayArrayIndex={false}
+      />
+    </div>
+  </div>
+</div>
 
 
-
-
-        </div>
       </section>
 
-      <section id="work">
-        <div className="h-36" />
+      <section id="work" className="mt-10 md:mt-20">
+        <div className="h-36 mt-20" />
         <div className="flex flex-col justify-center items-center ml-16">
           <div className="w-11/12 text-2xl bg-white rounded-lg mr-10">
             <div className="flex items-center justify-between bg-gray-200 rounded-t-lg p-1">
