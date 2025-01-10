@@ -236,13 +236,13 @@ export default function Home() {
 
     <div className="space-x-4 mt-4">
       <a href="https://github.com/exploratoryprorammer">
-        <FontAwesomeIcon size="3x" className="" icon={faGithub} />
+        <FontAwesomeIcon size="7x" className="" icon={faGithub} />
       </a>
       <a href="https://www.linkedin.com/in/rohan-sah/">
-        <FontAwesomeIcon size="3x" className="text-blue-600" icon={faLinkedin} />
+        <FontAwesomeIcon size="7x" className="text-blue-600" icon={faLinkedin} />
       </a>
       <a href="mailto:your.email@example.com">
-        <FontAwesomeIcon size="3x" icon={faEnvelope} />
+        <FontAwesomeIcon size="7x" icon={faEnvelope} />
       </a>
     </div>
   </div>
