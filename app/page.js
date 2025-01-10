@@ -1,6 +1,6 @@
 'use client';
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faBriefcase, faEnvelope, faHome, faSchool } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faCode, faCogs, faEnvelope, faHome, faLaptopCode, faProjectDiagram, faSchool } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import JsonView from 'react18-json-view'
 import 'react18-json-view/src/style.css'
@@ -19,7 +19,7 @@ import { useMediaQuery } from "@mui/material";
 const s = "#c22028"
 const data = {
   Age: "19",
-  Current_Role: ["Student SWE @ John Deere", "2nd Year CS + Math @ ISU"] ,
+  Current_Role: ["Student SWE @ John Deere", "2nd Year CS + Math student @ ISU"] ,
   Languages: ["Java", "Python", "JavaScript", "C++", "SQL"], 
   Libraries: ["Spring", "React", "Node.js", "Django"], 
   Hobbies: ["Tennis", "Running", "Soccer"],
@@ -47,7 +47,7 @@ const styling = {
 const education = [
   {
     name: "Iowa State University",
-    position: "August 2023 - May 2027",
+    position: "Aug. 2023 - Dec. 2026",
     role: "B.S. in Computer Science, Minor in Applied Mathematics",
     imageUrl: "/Iowa-State-Logo-drawing.jpg",
     gpa: "3.8",
@@ -64,6 +64,60 @@ const education = [
     date: "Present",
   },
 ];
+
+const projects = 
+
+[
+  {
+    name: "PremierCashBack",
+    role: "Designing & developing an AI-driven credit card cashback optimizing and tracking tool.",
+    imageUrl: "/Screenshot 2025-01-09 at 10.47.14 PM.png",
+    url: "https://memoraai.vercel.app/",
+    tools: ["React", "React Native", "Tailwind_CSS", "ClerkAPI", "StripeAPI", "PostgreSQL", "OpenAI"],
+
+  },
+  {
+    name: "MemoraAI",
+    role: "AI-powered platform to create, store, and manage flashcards.",
+    imageUrl: "/Screenshot 2025-01-09 at 9.38.22 PM.png",
+    url: "https://memoraai.vercel.app/",
+    tools: ["React", "NextJS", "OpeanAI", "Tailwind_CSS", "ClerkAPI", "StripeAPI", "Firebase"],
+
+  },
+  {
+    name: "AI_Asteroid_Detection",
+    role: "In-depth tracking for NASA-clasified near-Earth objects with RAG powered space hazard insights.",
+    imageUrl: "/Screenshot 2025-01-09 at 9.36.53 PM.png",
+    url: "https://neos.vercel.app/",
+    tools: ["React", "NextJS", "NASA_API", "MUI", "OpenAI", "Pinecone", "Python"],
+
+
+  },
+  {
+    name: "MongoScraper",
+    role: "Web scraper to extract and store data from URLs into MongoDB for API-free project development.",
+    imageUrl: "/Screenshot 2025-01-09 at 9.37.33 PM.png",
+    tools: ["React", "NodeJS", "MongoDB", "Puppeteer"],
+
+    url: "",
+  },
+  {
+    name: "ISU_Professor_Recommender",
+    role: "RAG tool to recommend ISU professors based on research interests, and academic preferences.",
+    imageUrl: "/Screenshot 2025-01-09 at 9.39.47 PM.png",
+    url: "",
+    tools: ["React", "NextJS", "Pinecone", "Python", "RAG", "Firebase"],
+
+  },
+];
+
+
+  
+
+
+  
+  
+
 
 
 const work = [
@@ -123,7 +177,7 @@ const work = [
 
 
 export default function Home() {
-  const smallscreen = useMediaQuery('(max-width:768px)')
+  const smallscreen = useMediaQuery('(max-width:1500px)')
 
   return (
     <div className="overflow-auto scroll-smooth" style={styling} >
@@ -142,6 +196,12 @@ export default function Home() {
               <FontAwesomeIcon icon={faBriefcase} size="4x" />
             </div>
             <span className="absolute top-28 left-1/2 transform -translate-x-1/2 text-white bg-gray-700 px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition duration-300">Experiences</span>
+          </a>
+          <a href="#projects" className="relative group">
+            <div className="bg-gray-300 hover:bg-gray-200 h-28 w-28 text-center flex items-center justify-center text-gray-700 font-medium cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg opacity-50 group-hover:opacity-100">
+              <FontAwesomeIcon icon={faProjectDiagram} size="4x" />
+            </div>
+            <span className="absolute top-28 left-1/2 transform -translate-x-1/2 text-white bg-gray-700 px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition duration-300">Projects</span>
           </a>
           <a href="#education" className="relative group">
             <div className="bg-gray-300 hover:bg-gray-200 h-28 w-28 text-center flex items-center justify-center text-gray-700 font-medium cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg opacity-50 group-hover:opacity-100">
@@ -204,7 +264,7 @@ export default function Home() {
 
       </section>
 
-      <section id="work" className="mt-10 md:mt-20">
+      {!smallscreen ? (<section id="work" className="mt-10 md:mt-20">
         <div className="h-36 mt-20" />
         <div className="flex flex-col justify-center items-center ml-16">
           <div className="w-11/12 text-2xl bg-white rounded-lg mr-10">
@@ -302,9 +362,169 @@ export default function Home() {
 
 
         </div>
-      </section>
-      <section id="education">
+      </section>): (<section id="work" className="mt-10 md:mt-20">
+        <div className="h-36 mt-20" />
+        <div className="flex flex-col justify-center items-center ml-16">
+          <div className="w-11/12 text-2xl bg-white rounded-lg mr-10">
+            <div className="flex items-center justify-between bg-gray-200 rounded-t-lg p-1">
+              <div className="flex ml-2 space-x-3">
+                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+              </div>
+              <div className="text-gray-700 font-semibold"> WorkExperience.app</div>
+              <div></div>
+            </div>
+
+            <div className="flex flex-col bg-gray-300 pt-8 pb-8 pl-6 pr-6 gap-3 w-full h-full justify center items-center rounded-b-lg">
+              {work.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col md:flex-row bg-white w-full lg:w-full h-auto rounded-xl shadow-lg overflow-hidden"
+                >
+                  <div className="relative w-56 h-40 md:w-56">
+
+                    {/* Image Section */}
+                    <img
+                      src={item.imageUrl}
+                      alt="Work Experience"
+                      className="absolute h-40 w-56 md:w-56 object-cover bg-gray-200 rounded-t-lg md:rounded-l-lg md:rounded-t-none"
+                    />
+                  </div>
+                  {/* Content Section */}
+                  <div className="p-4 text-black flex flex-col w-full">
+                    <div className="flex items-center w-full justify-between">
+                      <h2 className="text-3xl font-semibold font-serif ">{item.name}</h2>
+                      <p className="text-lg italic text-gray-950 font-sans ml-auto">{item.date}</p>
+                    </div>
+                    <p className="text-lg italic text-gray-950 font-sans">{item.position}</p>
+                    <p className="text-xl text-black mt-3 font-mono">{item.role}</p>
+                  </div>
+                </div>
+              ))}
+
+              <div
+                className="flex flex-col md:flex-row bg-white w-full lg:w-full h-auto rounded-lg shadow-lg overflow-hidden"
+              >
+                {/* Image Section */}
+                <div className="relative w-56 h-40 md:w-56">
+
+                  <img
+                    src={"/6b7494_8b0abaf9d22c444cafb659a0e25e5625~mv2.png"}
+                    alt="Work Experience"
+                    className="absolute h-40 w-56 md:w-56 object-cover bg-red-700 p-2 rounded-t-lg md:rounded-l-lg md:rounded-t-none"
+                  />
+                </div>
+                {/* Content Section */}
+                <div className="p-4 text-black flex flex-col w-full">
+                  <div className="flex items-center w-full">
+
+                    <h2 className="text-3xl font-semibold font-serif">Gladiator's NYC</h2>
+                    <p className="text-lg italic text-gray-950 font-sans ml-auto">Summer 2024</p>
+
+                  </div>
+                  <p className="text-lg italic text-gray-950 font-sans">{ }Software Engineering Intern</p>
+                  <p className="text-xl text-black mt-3 font-mono">{ }📈 Streamlined & Automated product price, name, & availability updates</p>
+                </div>
+              </div>
+              <div
+                className="flex flex-col md:flex-row bg-white w-full lg:w-full h-auto rounded-lg shadow-lg overflow-hidden"
+              >
+                {/* Image Section */}
+                <div className="relative w-56 h-40 md:w-56">
+
+                  <img
+                    src={"/IMG_0006.JPG"}
+                    alt="Work Experience"
+                    className="absolute h-40 w-56 md:w-56 object-cover bg-red-700 p-2 rounded-t-lg md:rounded-l-lg md:rounded-t-none"
+                  />
+                </div>
+                {/* Content Section */}
+                <div className="p-4 text-black flex flex-col w-full">
+                  <div className="flex items-center w-full">
+
+                    <h2 className="text-3xl font-semibold font-serif">Iowa State University</h2>
+                    <p className="text-lg italic text-gray-950 font-sans ml-auto">Fall 2023, Spring 2024</p>
+
+                  </div>
+                  <p className="text-lg italic text-gray-950 font-sans">{ } Undergraduate Research Assistant</p>
+                  {/* <p className="text-xl text-black mt-3 font-mono">{ }Defense of Lidar sensor via Deep Learning</p> */}
+                </div>
+              </div>
+            </div>
+            
+
+
+
+          </div>
+
+
+        </div>
+      </section>)}
+
+      <section id="projects">
         <div className="h-36" />
+        <div className="flex flex-col justify-start mt-24 items-center ml-16 pb-24">
+          <div className="w-11/12 text-2xl bg-white rounded-lg mr-10">
+            <div className="flex items-center justify-between bg-gray-200 rounded-t-lg p-1">
+              <div className="flex ml-2 space-x-3">
+                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+              </div>
+              <div className="text-gray-700 font-semibold"> Project.app</div>
+              <div></div>
+            </div>
+
+            <div className=" flex flex-col bg-gray-300 pt-8 pb-8 pl-6 pr-6 gap-3 w-full h-full justify center items-center rounded-b-lg">
+              {projects.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col gap-10 md:flex-row w-full lg:w-full h-auto rounded-xl rounded-r-xl  overflow-hidden"
+                >
+                  <div className="relative w-1/5 h-44 md:w-1/6 rounded-xl overflow-hidden">
+                  <img
+                    src={item.imageUrl}
+                    alt="Work Experience"
+                    className="h-full w-full object-cover bg-gray-300 rounded-xl scale-125"
+                  />
+                </div>
+
+
+
+                  <div className="p-4 bg-white rounded-xl shadow-lg text-black flex flex-col w-5/6">
+                    <div className="flex items-center w-full justify-between">
+                      <h2 className="text-3xl font-semibold font-serif ">{item.name}</h2>
+                      
+
+                    </div>
+                    <p className="text-xl text-black mt-5 font-mono">
+                     {item.role}
+                    </p>
+                    {/* Tools Section */}
+              <div className="flex flex-wrap mt-4 gap-3">
+                {item.tools.map((tool, toolIndex) => (
+                  <div
+                    key={toolIndex}
+                    className="bg-black text-white py-1 px-3 rounded-lg shadow-lg text-sm font-medium font-mono"
+                  >
+                    {tool}
+                  </div>
+                ))}
+              </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+
+      <section id="education">
+        {/* <div className="h-36" /> */}
         <div className="flex flex-col justify-start mt-24 items-center ml-16 pb-24">
           <div className="w-11/12 text-2xl bg-white rounded-lg mr-10">
             <div className="flex items-center justify-between bg-gray-200 rounded-t-lg p-1">
@@ -364,6 +584,8 @@ export default function Home() {
         <div className="h-60" />
 
       </section>
+
+
 
 
 

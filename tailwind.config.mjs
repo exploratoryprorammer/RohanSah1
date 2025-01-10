@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: '640px',  
+      },
       fontFamily: {
         rubit: ['Rubit', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
