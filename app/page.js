@@ -73,7 +73,7 @@ const projects =
     role: "Designing & developing an AI-driven credit card cashback optimizing and tracking tool.",
     imageUrl: "/Screenshot 2025-01-09 at 10.47.14 PM.png",
     url: "https://memoraai.vercel.app/",
-    tools: ["React", "React Native", "Tailwind_CSS", "ClerkAPI", "StripeAPI", "PostgreSQL", "OpenAI"],
+    tools: ["React", "React_Native", "Tailwind_CSS", "ClerkAPI", "StripeAPI", "PostgreSQL", "OpenAI"],
 
   },
   {
@@ -128,6 +128,7 @@ const work = [
     imageUrl: "/john_deere_logo_wallpaper_by_fictionalautumn_d996o9y-fullview.jpg",
     color: "#C8E6C9",
     date: "Present"
+
   },
   {
     name: "Ivy College Of Business",
@@ -135,7 +136,9 @@ const work = [
     role: "🧳 Business Research & Full-Stack Software Development for the public good",
     imageUrl: "/Iowa-State-University-Ivy-College-of-Business.jpeg",
     color: "#F8D7DA",
-    date: "Present"
+    date: "Present",
+    tools: [ "React", "Spring", "MongoDB","SQL", "Python", "Go"],
+
 
   },
   {
@@ -144,7 +147,9 @@ const work = [
     role: "🌏 Developing the website for the Nepalese-American humanitarian non-profit, Indu Sah Foundation",
     imageUrl: "/IMG_0009.JPG",
     color: "#F8D7DA",
-    date: "Present"
+    date: "Present",
+    tools: ["React", "Tailwind_CSS", "MongoDB", "Docker","Spring", "MongoDB", "Postman"],
+
 
   },
   {
@@ -153,7 +158,9 @@ const work = [
     role: "📊 Built historic voter data automation software",
     imageUrl: "/Capitol image-1.jpg",
     color: "#A7C7E7",
-    date: "Summer 2024"
+    date: "Summer 2024",
+    tools: ["JavaScript", "Google App Script", "MongoDB", "Docker","Spring", "MongoDB", "Postman"],
+
   },
   // {
   //   name: "Iowa State University",
@@ -472,7 +479,7 @@ export default function Home() {
                 <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                 <div className="w-3 h-3 bg-green-500 rounded-full"></div>
               </div>
-              <div className="text-gray-700 font-semibold"> Project.app</div>
+              <div className="text-gray-700 font-semibold"> Projects.app</div>
               <div></div>
             </div>
 
