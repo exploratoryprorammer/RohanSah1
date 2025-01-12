@@ -111,7 +111,7 @@ const projects =
 
   },
   {
-    name: "University Project - CS 362(OOAD)",
+    name: "University_Project - CS_362(OOAD)",
     role: "Collaborated in a team of 4 to develop 40+ exhaustive and precise use cases modeling university functionalities using a custom JSON parser.",
     imageUrl: "/Corpus-Christi-College-University-of-Cambridge-England.jpg.webp",
     url: "https://memoraai.vercel.app/",
