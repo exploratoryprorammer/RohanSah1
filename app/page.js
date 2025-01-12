@@ -68,6 +68,7 @@ const education = [
 const projects = 
 
 [
+  
   {
     name: "PremierCashBack",
     role: "Designing & developing an AI-driven credit card cashback optimizing and tracking tool.",
@@ -107,6 +108,14 @@ const projects =
     imageUrl: "/Screenshot 2025-01-09 at 9.39.47 PM.png",
     url: "",
     tools: ["React", "NextJS", "Pinecone", "Python", "RAG", "Firebase"],
+
+  },
+  {
+    name: "University Project",
+    role: "Collaborated in a team of 4 to develop 40+ exhaustive and precise use cases modeling university functionalities using a custom JSON parser.",
+    imageUrl: "/Corpus-Christi-College-University-of-Cambridge-England.jpg.webp",
+    url: "https://memoraai.vercel.app/",
+    tools: ["Java", "Agile Methodologies"],
 
   },
 ];
