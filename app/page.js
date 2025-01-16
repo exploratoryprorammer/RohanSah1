@@ -19,7 +19,7 @@ import { useMediaQuery } from "@mui/material";
 const s = "#c22028"
 const data = {
   Age: "19",
-  Current_Role: ["Student SWE @ John Deere", "2nd Year CS + Math student @ ISU"] ,
+  Current_Role: ["Student SWE @ John Deere", "2nd Year CS + Math student @ ISU", "Python Teaching Assistant"] ,
   Languages: ["Java", "Python", "JavaScript", "C++", "SQL"], 
   Libraries: ["Spring", "React", "Node.js", "Django"], 
   Hobbies: ["Tennis", "Running", "Soccer"],
@@ -59,8 +59,8 @@ const education = [
       "- COM S 309 (Software Development Practices)\n" +
       "- COM S 311 (Analysis of Algorithms)\n" +
       "- COM S 321 (Computer Architecture and Organization)\n" +
-      "- COM S 363 (Introduction to Databases)\n" +
-      "- COM S 362 (Object-Oriented Analysis and Design)",
+      "- COM S 362 (Object-Oriented Analysis and Design)" +
+      "- COM S 363 (Introduction to Databases)\n",
     date: "Present",
   },
 ];
@@ -135,6 +135,15 @@ const work = [
     position: "Incoming Student Software Engineer",
     role: "🚜 Full Stack Software Development @ John Deere Financial",
     imageUrl: "/john_deere_logo_wallpaper_by_fictionalautumn_d996o9y-fullview.jpg",
+    color: "#C8E6C9",
+    date: "Present"
+
+  },
+  {
+    name: "Iowa State University",
+    position: "Undergraduate Teaching Assistant",
+    role: "📚 Teaching Assistant for CS 1270: Programming for Problem Solving in Python",
+    imageUrl: "/6aa59a4cfd7cb4cb706459bb6980a75f.png",
     color: "#C8E6C9",
     date: "Present"
 
