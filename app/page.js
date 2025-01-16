@@ -112,10 +112,10 @@ const projects =
   },
   {
     name: "University_Project - CS_362(OOAD)",
-    role: "Collaborated in a team of 4 to develop 40+ exhaustive and precise use cases modeling university functionalities using a custom JSON parser.",
+    role: "Collaborated in a team of 4 to develop 40+ exhaustive and precise use cases and custom JSON parser to model university functionalities.",
     imageUrl: "/Corpus-Christi-College-University-of-Cambridge-England.jpg.webp",
     url: "https://memoraai.vercel.app/",
-    tools: ["Java", "Agile Methodologies"],
+    tools: ["Java", "Agile Methodologies", "UML", "System Design and Modeling", "Git"],
 
   },
 ];
@@ -130,6 +130,7 @@ const projects =
 
 
 const work = [
+  
   {
     name: "John Deere",
     position: "Incoming Student Software Engineer",
@@ -346,7 +347,7 @@ export default function Home() {
                 <div className="p-4 text-black flex flex-col w-full">
                   <div className="flex items-center w-full">
 
-                    <h2 className="text-3xl font-semibold font-serif">Gladiator's NYC</h2>
+                    <h2 className="text-3xl font-semibold font-serif">Gladiators NYC</h2>
                     <p className="text-lg italic text-gray-950 font-sans ml-auto">Summer 2024</p>
 
                   </div>
@@ -378,7 +379,32 @@ export default function Home() {
                   <p className="text-xl text-black mt-3 font-mono">{ }Defense of Lidar sensor via Deep Learning</p>
                 </div>
               </div>
+              <div
+                className="flex flex-col md:flex-row bg-white w-full lg:w-full h-auto rounded-lg shadow-lg overflow-hidden"
+              >
+                {/* Image Section */}
+                <div className="relative w-56 h-40 md:w-56">
+
+                  <img
+                    src={"/500c23165d28847bd625eaf0a5707710.jpeg"}
+                    alt="Work Experience"
+                    className="absolute h-40 w-56 md:w-56 object-cover  p-2 rounded-t-lg md:rounded-l-lg md:rounded-t-none"
+                  />
+                </div>
+                {/* Content Section */}
+                <div className="p-4 text-black flex flex-col w-full">
+                  <div className="flex items-center w-full">
+
+                    <h2 className="text-3xl font-semibold font-serif">MindZone Learning</h2>
+                    <p className="text-lg italic text-gray-950 font-sans ml-auto">Summer 2022, Summer 2023</p>
+
+                  </div>
+                  <p className="text-lg italic text-gray-950 font-sans">{ } Academic Tutor</p>
+                  <p className="text-xl text-black mt-3 font-mono">{ }📝 Math, reading, and science tutor fostering a competitive & consistent environment</p>
+                </div>
+              </div>
             </div>
+            
             
 
 
