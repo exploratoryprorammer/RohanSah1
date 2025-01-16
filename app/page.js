@@ -19,7 +19,7 @@ import { useMediaQuery } from "@mui/material";
 const s = "#c22028"
 const data = {
   Age: "19",
-  Current_Role: ["Student SWE @ John Deere", "2nd Year CS + Math student @ ISU", "Python Teaching Assistant"] ,
+  Current_Role: ["Student SWE @ John Deere", "2nd Year CS + Math student @ ISU", "Python Teaching Assistant", "Research Assistant @ Ivy College of Business"] ,
   Languages: ["Java", "Python", "JavaScript", "C++", "SQL"], 
   Libraries: ["Spring", "React", "Node.js", "Django"], 
   Hobbies: ["Tennis", "Running", "Soccer"],
