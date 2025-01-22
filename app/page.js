@@ -632,11 +632,7 @@ export default function Home() {
         <div className="" />
 
       </section>
-      <section id="footer">
-        <div className="w-full h-24 items-center justify-center -ml-14">
-          <img src="/signature.png" className=" transform translate-x-1/4  text-4xl font-mono justify-center items-center"></img>
-        </div>
-      </section>
+      
 
 
 
