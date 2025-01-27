@@ -131,7 +131,7 @@ const work = [
     name: "John Deere",
     position: "Incoming Student Software Engineer",
     role: "🚜 Full Stack Software Development @ John Deere Financial",
-    imageUrl: "/john_deere_logo_wallpaper_by_fictionalautumn_d996o9y-fullview.jpg",
+    imageUrl: "/1711593867544.gif",
     color: "#C8E6C9",
     date: "Present"
 
