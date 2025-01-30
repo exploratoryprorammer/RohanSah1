@@ -130,7 +130,7 @@ const work = [
   {
     name: "John Deere",
     position: "Student Software Engineer",
-    role: "🚜 Software Engineering @ John Deere Financial",
+    role: "🚜 Multidisciplinary Software Engineering @ John Deere Financial",
     imageUrl: "/1711593867544.gif",
     color: "#C8E6C9",
     date: "Present"
