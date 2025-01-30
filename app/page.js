@@ -130,7 +130,7 @@ const work = [
   {
     name: "John Deere",
     position: "Student Software Engineer",
-    role: "🚜 Multidisciplinary Software Engineering @ John Deere Financial",
+    role: "🚜 Full Stack Software Engineering @ John Deere Financial",
     imageUrl: "/1711593867544.gif",
     color: "#C8E6C9",
     date: "Present"
@@ -139,7 +139,7 @@ const work = [
   {
     name: "The University of California, San Francisco",
     position: "Undergraduate Research Assistant",
-    role: "🦷 Researching under Vishakha Malhotra @ UCSF School of Medicine",
+    role: "🦷 Researching under Vishakha Malhotra @ UCSF School of Dentistry",
     imageUrl: "/university-of-california-san-francisco-logo-C0D2F03901-seeklogo.com-2.png",
     color: "#C8E6C9",
     date: "Present"
