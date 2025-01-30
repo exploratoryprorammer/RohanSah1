@@ -156,6 +156,7 @@ const work = [
 
 
   },
+  
   {
     name: "Indu Sah Foundation",
     position: "Founding Software Engineer",
@@ -165,6 +166,15 @@ const work = [
     date: "Present",
     tools: ["React", "Tailwind_CSS", "MongoDB", "Docker","Spring", "MongoDB", "Postman"],
 
+
+  },
+  {
+    name: "Iowa State University",
+    position: "Undergraduate Teaching Assistant",
+    role: "📚 Teaching Assistant for CS 1270: Programming for Problem Solving in Python",
+    imageUrl: "/6aa59a4cfd7cb4cb706459bb6980a75f.png",
+    color: "#C8E6C9",
+    date: "Spring 2025"
 
   },
   {
