@@ -146,15 +146,6 @@ const work = [
 
   },
   {
-    name: "PriSum Solar Car",
-    position: "Software Engineer",
-    role: "⚡ Building a solar powered car",
-    imageUrl: "/327291023_690706439419091_5365476037982295161_n.png",
-    color: "#C8E6C9",
-    date: "Present"
-
-  },
-  {
     name: "Ivy College Of Business",
     position: "Software Engineering Research Assistant",
     role: "🧳 Business Research & Full-Stack Software Development for the public good",
@@ -163,15 +154,6 @@ const work = [
     date: "Present",
     tools: [ "React", "Spring", "MongoDB","SQL", "Python", "Go"],
 
-
-  },
-  {
-    name: "Iowa State University",
-    position: "Undergraduate Teaching Assistant",
-    role: "📚 Teaching Assistant for CS 1270: Programming for Problem Solving in Python",
-    imageUrl: "/6aa59a4cfd7cb4cb706459bb6980a75f.png",
-    color: "#C8E6C9",
-    date: "Spring 2025"
 
   },
   {
