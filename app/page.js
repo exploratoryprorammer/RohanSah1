@@ -136,15 +136,15 @@ const work = [
     date: "Present"
 
   },
-  // {
-  //   name: "The University of California, San Francisco",
-  //   position: "Undergraduate Research Assistant",
-  //   role: "🦷 Researching under Vishakha Malhotra @ UCSF School of Dentistry",
-  //   imageUrl: "/university-of-california-san-francisco-logo-C0D2F03901-seeklogo.com-2.png",
-  //   color: "#C8E6C9",
-  //   date: "Present"
+  {
+    name: "The University of California, San Francisco",
+    position: "Undergraduate Research Assistant",
+    role: "Digital Twins",
+    imageUrl: "/university-of-california-san-francisco-logo-C0D2F03901-seeklogo.com-2.png",
+    color: "#C8E6C9",
+    date: "Present"
 
-  // },
+  },
   {
     name: "Ivy College Of Business",
     position: "Software Engineering Research Assistant",
