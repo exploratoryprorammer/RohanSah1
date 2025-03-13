@@ -15,7 +15,7 @@ import { useMediaQuery } from "@mui/material";
 const s = "#c22028"
 const data = {
   Age: "19",
-  Current_Role: ["Student SWE @ John Deere", "2nd Year CS + Math student @ ISU", "Python Teaching Assistant", "Research Assistant @ Ivy"] ,
+  Current_Role: ["Student SWE @ John Deere", "Research Assistant @ UCSF", "2nd Year CS + Math student @ ISU"] ,
   Languages: ["Java", "Python", "JavaScript", "C++", "SQL"], 
   Libraries: ["Spring", "React", "Node.js", "Django"], 
   Hobbies: ["Tennis", "Running", "Soccer"],
@@ -137,13 +137,12 @@ const work = [
 
   },
   {
-    name: "The University of California, San Francisco",
-    position: "Undergraduate Research Assistant",
-    role: "Digital Twins",
-    imageUrl: "/university-of-california-san-francisco-logo-C0D2F03901-seeklogo.com-2.png",
-    color: "#C8E6C9",
-    date: "Present"
-
+    "name": "The University of California, San Francisco",
+    "position": "Undergraduate Research Assistant",
+    "role": "💡 Digital Twins for Healthcare",
+    "imageUrl": "/university-of-california-san-francisco-logo-C0D2F03901-seeklogo.com-2.png",
+    "color": "#C8E6C9",
+    "date": "Present"
   },
   {
     name: "Ivy College Of Business",
