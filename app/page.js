@@ -139,7 +139,7 @@ const work = [
   {
     "name": "The University of California, San Francisco",
     "position": "Undergraduate Research Assistant",
-    "role": "💡 Digital Twins for Healthcare",
+    "role": "🩺 Digital Twins for Healthcare",
     "imageUrl": "/university-of-california-san-francisco-logo-C0D2F03901-seeklogo.com-2.png",
     "color": "#C8E6C9",
     "date": "Present"
