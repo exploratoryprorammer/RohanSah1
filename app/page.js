@@ -265,7 +265,7 @@ export default function Home() {
       <a href="https://www.linkedin.com/in/rohan-sah/">
         <FontAwesomeIcon size="7x" className="text-blue-600" icon={faLinkedin} />
       </a>
-      <a href="mailto:your.email@example.com">
+      <a href="mailto:rksah@iastate.edu">
         <FontAwesomeIcon size="7x" icon={faEnvelope} />
       </a>
     </div>
