@@ -18,7 +18,7 @@ const data = {
   Current_Role: ["Student SWE @ John Deere", "Research Assistant @ UCSF", "2nd Year CS + Math student @ ISU"] ,
   Languages: ["Java", "Python", "JavaScript", "C++", "SQL"], 
   Libraries: ["Spring", "React", "Node.js", "Django"], 
-  Hobbies: ["Tennis", "Running", "Soccer"],
+  Hobbies: ["Tennis", "Running", "Music Composition & Performance"],
 };
 
 
