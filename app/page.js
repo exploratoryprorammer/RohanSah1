@@ -114,6 +114,14 @@ const projects =
     tools: ["Java", "Agile Methodologies", "UML", "System Design and Modeling", "Git"],
 
   },
+  {
+    name: "LeetCode Tracker",
+    role: "Built an AI-powered LeetCode tracker with 200+ visits, a leaderboard, personalized challenges, and features that motivated users to solve 28+ problems.",
+    imageUrl: "/Screenshot 2025-07-13 at 9.53.35 PM.png",
+    url: "https://leetcodegrind.vercel.app/",
+    tools: ["Typescript", "React", "MongoDB", "Clerk", "Gemeni", "Leetcode API"],
+
+  },
 ];
 
 
@@ -152,8 +160,6 @@ const work = [
     color: "#F8D7DA",
     date: "Present",
     tools: [ "React", "Spring", "MongoDB","SQL", "Python", "Go"],
-
-
   },
   
   {
