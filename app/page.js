@@ -19,7 +19,7 @@ const data = {
   Languages: ["TypeScript", "Python", "Java", "C/C++", "Rust", "Go"], 
   Libraries: ["SpringBoot", "React", "Node.js"], 
   Cloud_DevOps: ["AWS", "Azure", "IaC", "Jenkins"],
-  Hobbies: ["Tennis", "Running", "Music Composition and Performance"],
+  Hobbies: ["Tennis, Running, Music"],
 };
 
 
