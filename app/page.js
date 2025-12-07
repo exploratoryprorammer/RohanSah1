@@ -15,10 +15,11 @@ import { useMediaQuery } from "@mui/material";
 const s = "#c22028"
 const data = {
   Age: "19",
-  Current_Role: ["Student SWE @ John Deere", "Research Assistant @ UCSF", "2nd Year CS + Math student @ ISU"] ,
-  Languages: ["Java", "Python", "JavaScript", "C++", "SQL"], 
-  Libraries: ["Spring", "React", "Node.js", "Django"], 
-  Hobbies: ["Tennis", "Running", "Music Composition & Performance"],
+  Current_Role: ["Student SWE @ John Deere", "Research Assistant @ UCSF", "3rd Year CS student @ ISU"] ,
+  Languages: ["TypeScript", "Python", "Java", "C/C++", "Rust", "Go"], 
+  Libraries: ["SpringBoot", "React", "Node.js"], 
+  Cloud_DevOps: ["AWS", "Azure", "IaC", "Jenkins"],
+  Hobbies: ["Tennis", "Running", "Music Composition and Performance"],
 };
 
 
@@ -55,6 +56,7 @@ const education = [
       "- COM S 309 (Software Development Practices)\n" +
       "- COM S 311 (Analysis of Algorithms)\n" +
       "- COM S 321 (Computer Architecture and Organization)\n" +
+      "- COM S 327 (Avanced Programming Techniques)" +
       "- COM S 362 (Object-Oriented Analysis and Design)" +
       "- COM S 363 (Introduction to Databases)\n",
     date: "Present",
@@ -64,6 +66,22 @@ const education = [
 const projects = 
 
 [
+  {
+    name: "Federated Learning Platform",
+    role: "Built a privacy-preserving federated learning system for distributed ML training across edge devices.",
+    imageUrl: "/72083f76-475f-4a38-b6b8-c29d664354e5_1108x598.jpg",
+    url: "https://memoraai.vercel.app/",
+    tools: ["Rust", "C++", "Python", "PyTorch", "Prometheus", "Distributed Systems"],
+
+  },
+  {
+    name: "AI Polls",
+    role: "Built an AI-powered voting and polling platform with RAG-based chatbot and custom email authentication.",
+    imageUrl: "/1200x630wa.jpg",
+    url: "https://memoraai.vercel.app/",
+    tools: ["SpringBoot", "OpenAI", "ONNX", "Git", "System Design", "SQL"],
+
+  },
   
   {
     name: "PremierCashBack",
@@ -632,9 +650,13 @@ export default function Home() {
                       - COM S 309 (Software Development Practices)<br />
                       - COM S 311 (Analysis of Algorithms)<br />
                       - COM S 321 (Computer Architecture and Organization)<br />
+                      - COM S 327 (Advanced Programming Techniques in C/C++) <br />
                       - COM S 331 (Theory of Computing) <br />
                       - COM S 363 (Introduction to Databases)<br />
-                      - COM S 362 (Object-Oriented Analysis and Design)
+                      - COM S 362 (Object-Oriented Analysis and Design)<br />
+                      - COM S 342 (Principles of Programming Languages)<br />
+                      - COM S 363 (Introduction to Databases)<br />
+                      - COM S 419 (Software Testing)<br />
                     </p>
                   </div>
                 </div>
